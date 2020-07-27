@@ -43,11 +43,10 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-white);
-  color: var(--clr-grey-1);
+  background: var(--bgColor);
   line-height: 1.5;
   font-size: 0.875rem;
-  margin-top: 5rem;
+  color: #fff;
 }
 
 p {
@@ -83,7 +82,6 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-3);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -126,3 +124,53 @@ p {
     width: 95vw;
   }
 }
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  position: sticky; 
+  top: 0;
+  /* overflow-y: hidden; */
+}
+
+.img-section {
+  background: #fff;
+  max-width: 100%;
+  width: 59em;
+  background: linear-gradient(to bottom,
+    rgba(34, 34, 34, 0.746), 
+    rgba(255, 255, 255, 0)), url(./asset/slider.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-section .logo-section {
+  /* background: rgba(51, 0, 51, 0.411); */
+  padding: 3em;
+}
+.img-section .logo{
+  width: 100px;
+}
+.content-section {
+  width: 100%;
+  overflow-y: scroll;
+  padding: 3em;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+    position: relative;
+    overflow-y: scroll;
+  }
+  .img-section {
+    height: 50%;
+    width: 100%;
+  }
+  .content-section {
+    height: 50%;
+    overflow: visible;
+  }
+}
+
