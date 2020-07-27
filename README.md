@@ -1,6 +1,6 @@
-# React With Smooth Scrolling
+# My React Portfolio
 
-![React with Smooth Scrolling](./images/cover.png)
+![My Portfolio built with React](./images/cover.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
